@@ -1,9 +1,7 @@
 <div class="container">
     <form   method="post" 
             action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-        <div class="form-group" >
-            <label  class="col-sm-2 col-form-label" 
-                    for="ZipCodeInput">Zip Code</label> 
+        <div class="container form-group" >
             <div class="col-sm-10">
                 <input  class="form-control" 
                         id="ZipCodeInput" 
@@ -53,7 +51,7 @@
             }
         } else {
             echo "  <div class=\"alert alert-warning\" role=\"alert\">
-                        Please type a Louisiana zip code
+                        Please type a valid US zip code and click Submit
                     </div>";
         }
         $conn->close();
